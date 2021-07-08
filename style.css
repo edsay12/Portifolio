@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+body{
+    background-color: rgba(128, 128, 128, 0.048);
+}
+
+
+
+:root{
+    --black:rgba(0, 0, 0, 0.911);
+    
+
+} 
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+    
+}
+
+
+/* menu lateral */
+.menumenu{
+    display: flex;
+    width: 100%;
+    justify-content:flex-end;
+    
+
+}
+
+.menu{
+    background-color: blue;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    
+}
+/* menu lateral */
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+.navbar nav a {
+    margin-right:1.2rem ;
+
+}
+.navbar nav a:hover {
+    border-bottom: 3px solid rgba(255, 217, 0, 0.904);
+    
+    padding: 28px 0;
+    color: rgba(255, 217, 0, 0.904);
+}
+.apresentaçao{
+    display: flex;
+    height: 478px;
+}
+
+.apresentaçao section{
+    margin-top: 20px;
+    display: flex;
+    flex: 1;
+    border: 1px solid black;
+}
+
+.initImg{
+    justify-content: center;
+    
+}
+
+.initImg img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.iniText{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30% ;
+}
+.iniText h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.iniText p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.blackButton{
+    padding: 10px 24px;
+    background-color:var(--black);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+.blackButton:hover{
+    padding: 10px 20px;
+    background-color:white;
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 8px;
+}
+
+.outlineButton{
+    padding:  10px 10px;
+    background-color:white;
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 8px;
+}
+
+.outlineButton:hover{
+    padding: 10px 10px;
+    background-color:var(--black);
+    border: 1px solid var(--black);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.buttons{
+    width: 42%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo{
+    background-color:var(--black);
+    width: 100%;
+    height: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+.conteudo .sobre .sobreDesc{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.conteudo .sobre P{
+   font-size: 20PX;
+}
+
+
+
+
+
+.conteudo .projetos .projetoDesc{
+  display: flex;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 78%;
+  margin: 0 auto;
+}
+.conteudo .projetos .projetoDesc .projeto{
+   
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--black);
+    color: white;
+    padding: 20px;
+    margin: 30px;
+}
+.titulo{
+    background-color:var(--black);
+    width: 100%;
+    height: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.conteudo .projetos .projetoDesc h2,p,button{
+
+    margin-top: 20px;
+   
+}
+
+footer{
+    border-top:1px solid var(--black) ;
+    width: 100%;
+    height: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
