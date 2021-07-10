@@ -1,180 +1,224 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    
+    /* overflow: hidden; quando apertar o botao vai ficar assim  */
 }
-body{
+
+body {
     background-color: rgba(128, 128, 128, 0.048);
 }
 
+:root {
+    --black: rgba(0, 0, 0, 0.911);
+}
 
-
-:root{
-    --black:rgba(0, 0, 0, 0.911);
-    
-
-} 
-header{
+header {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.082);
-    
 }
 
-
 /* menu lateral */
-.menumenu{
+
+
+
+.menumenu {
+    
     display: flex;
     width: 100%;
-    justify-content:flex-end;
+    justify-content: flex-end;
+    display: none;
+    animation:500ms MenuAnimation normal ;
     
-
 }
 
-.menu{
-    background-color: blue;
-    width: 50%;
+.menu {
+    background-color: black;
+    width: 100%;
     height: 100vh;
     position: fixed;
-    display: none;
+    border-bottom-left-radius: 20%;
     
+    
+  
+}
+
+.menu .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+
+.menu .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+.imageflex{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.navbar .menuImg{
+    position: absolute;
+    justify-content: flex-end;
+    
+   
+  /* xzinho do começo */
+}
+
+input[type="checkbox"]{
+    display: none;
 }
 /* menu lateral */
 
+.menu a {
+    color: white;
+    font-size: 35px;
+    margin: 15px;
+    transition: 1s all ease-in;
+}
 
-.navbar{
+.menu a:hover {
+    border-bottom: 2px solid white;
+}
+
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 80%;
 }
-.navbar nav a {
-    margin-right:1.2rem ;
 
+.navbar nav a {
+    margin-right: 1.2rem;
 }
+
 .navbar nav a:hover {
     border-bottom: 3px solid rgba(255, 217, 0, 0.904);
-    
     padding: 28px 0;
     color: rgba(255, 217, 0, 0.904);
 }
-.apresentaçao{
+
+.apresentaçao {
     display: flex;
     height: 478px;
+    flex-wrap: wrap-reverse;
 }
 
-.apresentaçao section{
+.apresentaçao section {
     margin-top: 20px;
+    padding: 30px;
     display: flex;
-    flex: 1;
-    border: 1px solid black;
+    flex: 50%;
 }
 
-.initImg{
+.initImg {
     justify-content: center;
-    
 }
 
-.initImg img{
+.initImg img {
     width: 50%;
     border-radius: 50%;
 }
 
-.iniText{
+.iniText {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 30% ;
 }
-.iniText h2{
+
+.iniText h2 {
     font-size: 40px;
     margin-bottom: 10px;
 }
+
 .iniText p {
     font-size: 20px;
     margin-bottom: 10px;
 }
-.blackButton{
+
+.blackButton {
     padding: 10px 24px;
-    background-color:var(--black);
+    background-color: var(--black);
     color: white;
     border: none;
     border-radius: 8px;
 }
-.blackButton:hover{
+
+.blackButton:hover {
     padding: 10px 20px;
-    background-color:white;
+    background-color: white;
     color: var(--black);
     border: 1px solid var(--black);
     border-radius: 8px;
 }
 
-.outlineButton{
-    padding:  10px 10px;
-    background-color:white;
-    color: var(--black);
-    border: 1px solid var(--black);
-    border-radius: 8px;
-}
-
-.outlineButton:hover{
+.outlineButton {
     padding: 10px 10px;
-    background-color:var(--black);
+    background-color: white;
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 8px;
+}
+
+.outlineButton:hover {
+    padding: 10px 10px;
+    background-color: var(--black);
     border: 1px solid var(--black);
     color: white;
     border: none;
     border-radius: 8px;
 }
 
-.buttons{
+.buttons {
     width: 42%;
     display: flex;
     justify-content: space-around;
 }
 
-.titulo{
-    background-color:var(--black);
+.titulo {
+    background-color: var(--black);
     width: 100%;
     height: 200px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-
-
-
-.conteudo .sobre .sobreDesc{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.conteudo .sobre P{
-   font-size: 20PX;
+.conteudo .sobre .sobreDesc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-
-
-
-.conteudo .projetos .projetoDesc{
-  display: flex;
-  margin-top: 40px;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 78%;
-  margin: 0 auto;
+.conteudo .sobre P {
+    font-size: 20PX;
 }
-.conteudo .projetos .projetoDesc .projeto{
-   
+
+.conteudo .projetos .projetoDesc {
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 78%;
+    margin: 0 auto;
+}
+
+.conteudo .projetos .projetoDesc .projeto {
     width: 300px;
     height: 300px;
     display: flex;
@@ -186,25 +230,23 @@ header{
     padding: 20px;
     margin: 30px;
 }
-.titulo{
-    background-color:var(--black);
+
+.titulo {
+    background-color: var(--black);
     width: 100%;
     height: 200px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-.conteudo .projetos .projetoDesc h2,p,button{
-
+.conteudo .projetos .projetoDesc h2, p, button {
     margin-top: 20px;
-   
 }
 
-footer{
-    border-top:1px solid var(--black) ;
+footer {
+    border-top: 1px solid var(--black);
     width: 100%;
     height: 200px;
     color: white;
@@ -214,3 +256,10 @@ footer{
 }
 
 
+
+@keyframes MenuAnimation {
+
+    to{transform: translateX(-1000000);}
+    from{transform: translateX(500px)}
+    
+}
